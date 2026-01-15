@@ -9,12 +9,13 @@ import { defineConfig, devices } from '@playwright/test';
 export default defineConfig({
   testDir: './tests',
   timeout: 40 * 1000,
+  reporter: [['html',{open: 'never'}]],
   expect:{
     timeout: 5000
   },
 
   use: {
-    browserName: 'webkit',
+    browserName: 'chromium',
     headless: true,
   },
 
