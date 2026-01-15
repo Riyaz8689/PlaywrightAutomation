@@ -15,7 +15,7 @@ export default defineConfig({
 
   use: {
     browserName: 'webkit',
-    headless: false,
+    headless: true,
   },
 
  });
